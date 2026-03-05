@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding-top: 50px;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.celula { 
+    width: 60px;
+    height: 60px;
+    background-color: #bbb;
+    border: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.2s;
+}
+
+.celula:hover {
+    background-color: #ccc;
+}
+
+.revelada {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.bomba {
+    background-color: #ff4d4d !important;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.status {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#btn-reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
